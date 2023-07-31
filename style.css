@@ -1,0 +1,88 @@
+*{
+    margin: 0; padding: 0;
+}
+nav{
+    height: 64px;
+    background-color: rgb(128, 45, 128);
+    display: flex; align-items: center;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0 20px;
+}
+nav ul li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+.container{
+    display: flex;
+    width: 70%;
+    margin: 7vh auto;
+}
+
+.gameContainer{
+    display: grid;
+    grid-template-columns: repeat(3,8vw);
+    grid-template-rows: repeat(3,8vw);
+    margin: 0 3vw;
+}
+.box{
+    border: 2px solid blueviolet;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2.5rem;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+
+.gameInfo h1{
+    color: rgb(128, 45, 128);
+    margin: 10px 0;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.gameInfo h4{
+    color: rgb(128, 45, 128);
+}
+#wins{
+    color: rgb(128, 45, 128);
+    margin: 5px;
+}
+#btn{
+    margin: 10px 0;
+    height: 30px; width: 75px;
+    border-radius: 22%;
+    border: 1px solid rgb(226, 90, 90);
+    background-color: rgb(245, 163, 245);
+    color: white;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: rgb(241, 23, 205);
+}
+@media only screen and (max-width: 678px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .gameContainer{
+        display: grid;
+        grid-template-columns: repeat(3,13vw);
+        grid-template-rows: repeat(3,13vw);
+        margin: 0 3vw;
+    }
+}
